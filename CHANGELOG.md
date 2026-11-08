@@ -10,3 +10,7 @@ Documentación de uso de IA en el proyecto
     Incluye también al menos una restricción ambiental, por ejemplo un peso máximo por página pensado para la persona que tiene peor conexión.
     
     Plantéame una plantilla de restricciones en base a estos criterios, de forma breve y sin entrar en mucho detalle, siendo posible analizarla en menos de 1 minuto 
+
+
+### Modo oscuro
+     Prompt: Usanod como referencia la variable que he creado de la pantalla principal en modo oscuro, compárala con la versión original y define las variables para us reutilización.
