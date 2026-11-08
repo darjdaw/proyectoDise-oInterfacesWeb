@@ -1,4 +1,4 @@
-# Brief del proyecto: Foodapp
+# Brief del proyecto: Fooddie
 <!---
 El brief de proyecto es un documento breve que explica qué vas a construir, para quién y cómo sabrás si el diseño funciona. Tiene una particularidad: es el primero que empiezas y el último que terminas. Lo comienzas el primer día con tu hipótesis y lo cierras cuatro semanas después, cuando ya puedes apoyar cada afirmación con los datos de tu investigación. Si al final de la órbita tu brief se parece demasiado a lo que escribiste el primer día, conviene que te preguntes si la investigación ha cambiado algo de lo que pensabas.
 -->
@@ -45,3 +45,62 @@ Las restricciones, que son los límites con los que tienes que trabajar: los tec
 | | Accesibilidad | **Navegación 100% por teclado**. Sin gestos táctiles complejos ni avisos exclusivamente sonoros. |
 | **Ambiental** *(Red y Entorno)* | Peso de página *(Performance Budget)* | **Máximo 2 MB por vista** (imágenes optimizadas y minificación) para conexiones débiles (3G). |
 | | Tiempos de carga | **FCP < 2 segundos** con throttling de red activado. |
+
+# Órbita 2: sistema visual de [nombre de tu aplicación]
+
+## Enlaces
+
+| Qué | Enlace |
+|---|---|
+| Mockup + Estilos Web |[Mockup Web](https://www.figma.com/design/bECq10MRgdyF5GqBcu4VmR/MockupWeb-7-11?node-id=5027-344) |
+| Prototipo Web |[Prototipo Web](https://www.figma.com/proto/bECq10MRgdyF5GqBcu4VmR/MockupWeb-7-11?node-id=5027-347&p=f&t=Gu6GuNdfFW6TfJat-0&scaling=scale-down&content-scaling=fixed&page-id=5027%3A344&starting-point-node-id=5027%3A347)|
+
+## Dónde está cada cosa en Figma
+
+| Entregable | Página y sección del archivo |
+|---|---|
+| Inventario de decisiones |  |
+| Wireframes rediseñados con sus notas | [Wireframe](https://www.figma.com/design/bECq10MRgdyF5GqBcu4VmR/MockupWeb-7-11?node-id=0-1&p=f&t=Gu6GuNdfFW6TfJat-0) |
+| Componentes | Componentes web | [En la página de componentes del mockup web](https://www.figma.com/design/bECq10MRgdyF5GqBcu4VmR/MockupWeb-7-11?node-id=5027-344&p=f&t=Gu6GuNdfFW6TfJat-0) 
+| Mockups del happy path | Web | [Mockup de la web] (https://www.figma.com/design/bECq10MRgdyF5GqBcu4VmR/MockupWeb-7-11?node-id=5027-344&p=f&t=Gu6GuNdfFW6TfJat-0)
+| Pantalla principal en el segundo ancho | x |
+| Pantallas en modo oscuro | [Usar variable Dark Mode en el menú de variables](https://www.figma.com/design/bECq10MRgdyF5GqBcu4VmR/MockupWeb-7-11?node-id=5027-344&p=f&t=fB6Uj0cOClbnog6F-0) |
+| Guía de estilo | Página de manual de la Web | [Manual de identidad visual en Figma](https://www.figma.com/design/bECq10MRgdyF5GqBcu4VmR/MockupWeb-7-11?node-id=3044-56&p=f&t=Gu6GuNdfFW6TfJat-0)
+
+## Lista de comprobación de Figma
+
+- [x] Variables en dos colecciones (primitivos y semánticos), con alias, modos claro y oscuro, ámbito, descripción y sintaxis de código.
+- [x] Estilos de texto, efecto y retícula vinculados a las variables.
+- [~] Componentes con Auto layout, variables, propiedades y variantes de estado.
+- [~] Mockups construidos enteros con Auto layout y espacios sacados de variables.
+- [ ] Pantalla principal en un segundo ancho, con los mismos componentes.
+- [x] Modo oscuro aplicado con el selector de modo.
+- [x] Prototipo que recorre el happy path completo.
+- [x] Prueba 1 superada: al cambiar `color/primary`, cambian todas las pantallas a la vez.
+- [x] Prueba 2 superada: con todos los mockups en modo oscuro, nada desaparece contra el fondo.
+
+## Resumen de decisiones
+
+### Rediseño de los wireframes
+Sobre todo la pantalla de login, se han ajustado algunos menús desplegables y se han ajustado los espacios entre elementos de la página.
+
+### Color
+Definidos en la [guía de estilos](https://www.figma.com/design/bECq10MRgdyF5GqBcu4VmR/MockupWeb-7-11?node-id=3044-56&p=f&t=Gu6GuNdfFW6TfJat-0).
+
+### Tipografía
+Definidos en la [guía de estilos](https://www.figma.com/design/bECq10MRgdyF5GqBcu4VmR/MockupWeb-7-11?node-id=3044-56&p=f&t=Gu6GuNdfFW6TfJat-0).
+
+### Espaciado y retícula
+Definidos en la [guía de estilos](https://www.figma.com/design/bECq10MRgdyF5GqBcu4VmR/MockupWeb-7-11?node-id=3044-56&p=f&t=Gu6GuNdfFW6TfJat-0).
+
+### Componentes
+En el apartado componentes.
+
+### Responsive y modo oscuro
+ALgunos elementos al usar padding, se ha tenidoq ue corregir todo su tamañó, distribución en general de los elementos en la página de login.
+
+## Uso de IA
+Asistencia en la definición del formato de token semánticos y a la hora de realizar el modo oscuro. Se realizó una variación a mano de una pantalla del modo oscuro y se le pidió al agente de Figma que asignara las variables . El detalle está en el [CHANGELOG.md](CHANGELOG.md).
+
+## Lo que ha quedado pendiente
+Uso de estilos de espaciado, mockup de la APP, mejor nomenclatura de los componentes.
